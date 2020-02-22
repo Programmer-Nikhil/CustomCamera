@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC0338772400FD62008CBFF1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0338762400FD62008CBFF1 /* CoreGraphics.framework */; };
+		EC0338792400FD6C008CBFF1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0338782400FD6C008CBFF1 /* AVFoundation.framework */; };
+		EC03387B2400FD75008CBFF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC03387A2400FD75008CBFF1 /* Foundation.framework */; };
+		EC03387D2400FD7C008CBFF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC03387C2400FD7C008CBFF1 /* UIKit.framework */; };
+		EC03388424011299008CBFF1 /* CameraFocusView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC03388324011299008CBFF1 /* CameraFocusView.m */; };
+		EC03388824011319008CBFF1 /* CameraPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC03388724011319008CBFF1 /* CameraPreviewView.m */; };
 		ECB486A92400EDAC0090128C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB486A82400EDAC0090128C /* AppDelegate.m */; };
 		ECB486AC2400EDAC0090128C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB486AB2400EDAC0090128C /* SceneDelegate.m */; };
 		ECB486AF2400EDAC0090128C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB486AE2400EDAC0090128C /* ViewController.m */; };
@@ -17,7 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ECB486A42400EDAC0090128C /* CustomCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC0338762400FD62008CBFF1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EC0338782400FD6C008CBFF1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EC03387A2400FD75008CBFF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EC03387C2400FD7C008CBFF1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EC03388224011299008CBFF1 /* CameraFocusView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraFocusView.h; sourceTree = "<group>"; };
+		EC03388324011299008CBFF1 /* CameraFocusView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraFocusView.m; sourceTree = "<group>"; };
+		EC03388624011319008CBFF1 /* CameraPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraPreviewView.h; sourceTree = "<group>"; };
+		EC03388724011319008CBFF1 /* CameraPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraPreviewView.m; sourceTree = "<group>"; };
+		ECB486A42400EDAC0090128C /* LocoCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocoCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB486A72400EDAC0090128C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECB486A82400EDAC0090128C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		ECB486AA2400EDAC0090128C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
@@ -36,24 +50,58 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC0338792400FD6C008CBFF1 /* AVFoundation.framework in Frameworks */,
+				EC03387D2400FD7C008CBFF1 /* UIKit.framework in Frameworks */,
+				EC03387B2400FD75008CBFF1 /* Foundation.framework in Frameworks */,
+				EC0338772400FD62008CBFF1 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC0338752400FD62008CBFF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC03387C2400FD7C008CBFF1 /* UIKit.framework */,
+				EC03387A2400FD75008CBFF1 /* Foundation.framework */,
+				EC0338782400FD6C008CBFF1 /* AVFoundation.framework */,
+				EC0338762400FD62008CBFF1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC03387E240111B0008CBFF1 /* CameraFocusView */ = {
+			isa = PBXGroup;
+			children = (
+				EC03388224011299008CBFF1 /* CameraFocusView.h */,
+				EC03388324011299008CBFF1 /* CameraFocusView.m */,
+			);
+			path = CameraFocusView;
+			sourceTree = "<group>";
+		};
+		EC033885240112FC008CBFF1 /* CameraPreviewView */ = {
+			isa = PBXGroup;
+			children = (
+				EC03388624011319008CBFF1 /* CameraPreviewView.h */,
+				EC03388724011319008CBFF1 /* CameraPreviewView.m */,
+			);
+			path = CameraPreviewView;
+			sourceTree = "<group>";
+		};
 		ECB4869B2400EDAC0090128C = {
 			isa = PBXGroup;
 			children = (
 				ECB486A62400EDAC0090128C /* CustomCamera */,
 				ECB486A52400EDAC0090128C /* Products */,
+				EC0338752400FD62008CBFF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		ECB486A52400EDAC0090128C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ECB486A42400EDAC0090128C /* CustomCamera.app */,
+				ECB486A42400EDAC0090128C /* LocoCamera.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +109,8 @@
 		ECB486A62400EDAC0090128C /* CustomCamera */ = {
 			isa = PBXGroup;
 			children = (
+				EC033885240112FC008CBFF1 /* CameraPreviewView */,
+				EC03387E240111B0008CBFF1 /* CameraFocusView */,
 				ECB486A72400EDAC0090128C /* AppDelegate.h */,
 				ECB486A82400EDAC0090128C /* AppDelegate.m */,
 				ECB486AA2400EDAC0090128C /* SceneDelegate.h */,
@@ -93,7 +143,7 @@
 			);
 			name = CustomCamera;
 			productName = CustomCamera;
-			productReference = ECB486A42400EDAC0090128C /* CustomCamera.app */;
+			productReference = ECB486A42400EDAC0090128C /* LocoCamera.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -146,7 +196,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC03388424011299008CBFF1 /* CameraFocusView.m in Sources */,
 				ECB486AF2400EDAC0090128C /* ViewController.m in Sources */,
+				EC03388824011319008CBFF1 /* CameraPreviewView.m in Sources */,
 				ECB486A92400EDAC0090128C /* AppDelegate.m in Sources */,
 				ECB486BA2400EDAE0090128C /* main.m in Sources */,
 				ECB486AC2400EDAC0090128C /* SceneDelegate.m in Sources */,
@@ -296,8 +348,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.CustomCamera;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LocoCamera;
+				PRODUCT_NAME = LocoCamera;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -313,8 +365,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.CustomCamera;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LocoCamera;
+				PRODUCT_NAME = LocoCamera;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
