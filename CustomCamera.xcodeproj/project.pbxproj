@@ -13,6 +13,10 @@
 		EC03387D2400FD7C008CBFF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC03387C2400FD7C008CBFF1 /* UIKit.framework */; };
 		EC03388424011299008CBFF1 /* CameraFocusView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC03388324011299008CBFF1 /* CameraFocusView.m */; };
 		EC03388824011319008CBFF1 /* CameraPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC03388724011319008CBFF1 /* CameraPreviewView.m */; };
+		EC03388C24011EAF008CBFF1 /* NDCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC03388A24011EAF008CBFF1 /* NDCameraController.m */; };
+		EC03388D24011EAF008CBFF1 /* NDCameraController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC03388B24011EAF008CBFF1 /* NDCameraController.xib */; };
+		EC033891240125D1008CBFF1 /* ImagePreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC03388F240125D1008CBFF1 /* ImagePreviewController.m */; };
+		EC033892240125D1008CBFF1 /* ImagePreviewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC033890240125D1008CBFF1 /* ImagePreviewController.xib */; };
 		ECB486A92400EDAC0090128C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB486A82400EDAC0090128C /* AppDelegate.m */; };
 		ECB486AC2400EDAC0090128C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB486AB2400EDAC0090128C /* SceneDelegate.m */; };
 		ECB486AF2400EDAC0090128C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB486AE2400EDAC0090128C /* ViewController.m */; };
@@ -31,6 +35,12 @@
 		EC03388324011299008CBFF1 /* CameraFocusView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraFocusView.m; sourceTree = "<group>"; };
 		EC03388624011319008CBFF1 /* CameraPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraPreviewView.h; sourceTree = "<group>"; };
 		EC03388724011319008CBFF1 /* CameraPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraPreviewView.m; sourceTree = "<group>"; };
+		EC03388924011EAF008CBFF1 /* NDCameraController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDCameraController.h; sourceTree = "<group>"; };
+		EC03388A24011EAF008CBFF1 /* NDCameraController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NDCameraController.m; sourceTree = "<group>"; };
+		EC03388B24011EAF008CBFF1 /* NDCameraController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NDCameraController.xib; sourceTree = "<group>"; };
+		EC03388E240125D1008CBFF1 /* ImagePreviewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagePreviewController.h; sourceTree = "<group>"; };
+		EC03388F240125D1008CBFF1 /* ImagePreviewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImagePreviewController.m; sourceTree = "<group>"; };
+		EC033890240125D1008CBFF1 /* ImagePreviewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePreviewController.xib; sourceTree = "<group>"; };
 		ECB486A42400EDAC0090128C /* LocoCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocoCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB486A72400EDAC0090128C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECB486A82400EDAC0090128C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -117,6 +127,12 @@
 				ECB486AB2400EDAC0090128C /* SceneDelegate.m */,
 				ECB486AD2400EDAC0090128C /* ViewController.h */,
 				ECB486AE2400EDAC0090128C /* ViewController.m */,
+				EC03388924011EAF008CBFF1 /* NDCameraController.h */,
+				EC03388A24011EAF008CBFF1 /* NDCameraController.m */,
+				EC03388B24011EAF008CBFF1 /* NDCameraController.xib */,
+				EC03388E240125D1008CBFF1 /* ImagePreviewController.h */,
+				EC03388F240125D1008CBFF1 /* ImagePreviewController.m */,
+				EC033890240125D1008CBFF1 /* ImagePreviewController.xib */,
 				ECB486B02400EDAC0090128C /* Main.storyboard */,
 				ECB486B32400EDAE0090128C /* Assets.xcassets */,
 				ECB486B52400EDAE0090128C /* LaunchScreen.storyboard */,
@@ -185,6 +201,8 @@
 			files = (
 				ECB486B72400EDAE0090128C /* LaunchScreen.storyboard in Resources */,
 				ECB486B42400EDAE0090128C /* Assets.xcassets in Resources */,
+				EC03388D24011EAF008CBFF1 /* NDCameraController.xib in Resources */,
+				EC033892240125D1008CBFF1 /* ImagePreviewController.xib in Resources */,
 				ECB486B22400EDAC0090128C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,8 +215,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC03388424011299008CBFF1 /* CameraFocusView.m in Sources */,
+				EC03388C24011EAF008CBFF1 /* NDCameraController.m in Sources */,
 				ECB486AF2400EDAC0090128C /* ViewController.m in Sources */,
 				EC03388824011319008CBFF1 /* CameraPreviewView.m in Sources */,
+				EC033891240125D1008CBFF1 /* ImagePreviewController.m in Sources */,
 				ECB486A92400EDAC0090128C /* AppDelegate.m in Sources */,
 				ECB486BA2400EDAE0090128C /* main.m in Sources */,
 				ECB486AC2400EDAC0090128C /* SceneDelegate.m in Sources */,
